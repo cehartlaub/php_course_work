@@ -1,0 +1,76 @@
+[14-Sep-2015 23:47:59 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/ubuntu/workspace/php_course_work/lab_2/report.php on line 21
+[14-Sep-2015 23:47:59 UTC] PHP Stack trace:
+[14-Sep-2015 23:47:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/php_course_work/lab_2/report.php:0
+[14-Sep-2015 23:47:59 UTC] PHP   2. mysqli_connect() /home/ubuntu/workspace/php_course_work/lab_2/report.php:21
+[14-Sep-2015 23:47:59 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/ubuntu/workspace/php_course_work/lab_2/report.php on line 30
+[14-Sep-2015 23:47:59 UTC] PHP Stack trace:
+[14-Sep-2015 23:47:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/php_course_work/lab_2/report.php:0
+[14-Sep-2015 23:47:59 UTC] PHP   2. mysqli_query() /home/ubuntu/workspace/php_course_work/lab_2/report.php:30
+[14-Sep-2015 23:48:59 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/ubuntu/workspace/php_course_work/lab_2/report.php on line 21
+[14-Sep-2015 23:48:59 UTC] PHP Stack trace:
+[14-Sep-2015 23:48:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/php_course_work/lab_2/report.php:0
+[14-Sep-2015 23:48:59 UTC] PHP   2. mysqli_connect() /home/ubuntu/workspace/php_course_work/lab_2/report.php:21
+[14-Sep-2015 23:48:59 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/ubuntu/workspace/php_course_work/lab_2/report.php on line 30
+[14-Sep-2015 23:48:59 UTC] PHP Stack trace:
+[14-Sep-2015 23:48:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/php_course_work/lab_2/report.php:0
+[14-Sep-2015 23:48:59 UTC] PHP   2. mysqli_query() /home/ubuntu/workspace/php_course_work/lab_2/report.php:30
+[14-Sep-2015 23:49:00 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/ubuntu/workspace/php_course_work/lab_2/report.php on line 21
+[14-Sep-2015 23:49:00 UTC] PHP Stack trace:
+[14-Sep-2015 23:49:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/php_course_work/lab_2/report.php:0
+[14-Sep-2015 23:49:00 UTC] PHP   2. mysqli_connect() /home/ubuntu/workspace/php_course_work/lab_2/report.php:21
+[14-Sep-2015 23:49:00 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/ubuntu/workspace/php_course_work/lab_2/report.php on line 30
+[14-Sep-2015 23:49:00 UTC] PHP Stack trace:
+[14-Sep-2015 23:49:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/php_course_work/lab_2/report.php:0
+[14-Sep-2015 23:49:00 UTC] PHP   2. mysqli_query() /home/ubuntu/workspace/php_course_work/lab_2/report.php:30
+[14-Sep-2015 23:49:01 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/ubuntu/workspace/php_course_work/lab_2/report.php on line 21
+[14-Sep-2015 23:49:01 UTC] PHP Stack trace:
+[14-Sep-2015 23:49:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/php_course_work/lab_2/report.php:0
+[14-Sep-2015 23:49:01 UTC] PHP   2. mysqli_connect() /home/ubuntu/workspace/php_course_work/lab_2/report.php:21
+[14-Sep-2015 23:49:01 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/ubuntu/workspace/php_course_work/lab_2/report.php on line 30
+[14-Sep-2015 23:49:01 UTC] PHP Stack trace:
+[14-Sep-2015 23:49:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/php_course_work/lab_2/report.php:0
+[14-Sep-2015 23:49:01 UTC] PHP   2. mysqli_query() /home/ubuntu/workspace/php_course_work/lab_2/report.php:30
+[14-Sep-2015 23:49:23 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/ubuntu/workspace/php_course_work/lab_2/report.php on line 21
+[14-Sep-2015 23:49:23 UTC] PHP Stack trace:
+[14-Sep-2015 23:49:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/php_course_work/lab_2/report.php:0
+[14-Sep-2015 23:49:23 UTC] PHP   2. mysqli_connect() /home/ubuntu/workspace/php_course_work/lab_2/report.php:21
+[14-Sep-2015 23:49:23 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/ubuntu/workspace/php_course_work/lab_2/report.php on line 30
+[14-Sep-2015 23:49:23 UTC] PHP Stack trace:
+[14-Sep-2015 23:49:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/php_course_work/lab_2/report.php:0
+[14-Sep-2015 23:49:23 UTC] PHP   2. mysqli_query() /home/ubuntu/workspace/php_course_work/lab_2/report.php:30
+[14-Sep-2015 23:52:57 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/php_course_work/lab_2/report.php on line 21
+[14-Sep-2015 23:52:57 UTC] PHP Stack trace:
+[14-Sep-2015 23:52:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/php_course_work/lab_2/report.php:0
+[14-Sep-2015 23:52:57 UTC] PHP   2. mysqli_connect() /home/ubuntu/workspace/php_course_work/lab_2/report.php:21
+[14-Sep-2015 23:52:57 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/php_course_work/lab_2/report.php on line 21
+[14-Sep-2015 23:52:57 UTC] PHP Stack trace:
+[14-Sep-2015 23:52:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/php_course_work/lab_2/report.php:0
+[14-Sep-2015 23:52:57 UTC] PHP   2. mysqli_connect() /home/ubuntu/workspace/php_course_work/lab_2/report.php:21
+[14-Sep-2015 23:52:57 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/ubuntu/workspace/php_course_work/lab_2/report.php on line 30
+[14-Sep-2015 23:52:57 UTC] PHP Stack trace:
+[14-Sep-2015 23:52:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/php_course_work/lab_2/report.php:0
+[14-Sep-2015 23:52:57 UTC] PHP   2. mysqli_query() /home/ubuntu/workspace/php_course_work/lab_2/report.php:30
+[14-Sep-2015 23:53:33 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/php_course_work/lab_2/report.php on line 21
+[14-Sep-2015 23:53:33 UTC] PHP Stack trace:
+[14-Sep-2015 23:53:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/php_course_work/lab_2/report.php:0
+[14-Sep-2015 23:53:33 UTC] PHP   2. mysqli_connect() /home/ubuntu/workspace/php_course_work/lab_2/report.php:21
+[14-Sep-2015 23:53:33 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/php_course_work/lab_2/report.php on line 21
+[14-Sep-2015 23:53:33 UTC] PHP Stack trace:
+[14-Sep-2015 23:53:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/php_course_work/lab_2/report.php:0
+[14-Sep-2015 23:53:33 UTC] PHP   2. mysqli_connect() /home/ubuntu/workspace/php_course_work/lab_2/report.php:21
+[14-Sep-2015 23:53:33 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/ubuntu/workspace/php_course_work/lab_2/report.php on line 30
+[14-Sep-2015 23:53:33 UTC] PHP Stack trace:
+[14-Sep-2015 23:53:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/php_course_work/lab_2/report.php:0
+[14-Sep-2015 23:53:33 UTC] PHP   2. mysqli_query() /home/ubuntu/workspace/php_course_work/lab_2/report.php:30
+[14-Sep-2015 23:55:20 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/php_course_work/lab_2/report.php on line 21
+[14-Sep-2015 23:55:20 UTC] PHP Stack trace:
+[14-Sep-2015 23:55:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/php_course_work/lab_2/report.php:0
+[14-Sep-2015 23:55:20 UTC] PHP   2. mysqli_connect() /home/ubuntu/workspace/php_course_work/lab_2/report.php:21
+[14-Sep-2015 23:55:20 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/ubuntu/workspace/php_course_work/lab_2/report.php on line 21
+[14-Sep-2015 23:55:20 UTC] PHP Stack trace:
+[14-Sep-2015 23:55:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/php_course_work/lab_2/report.php:0
+[14-Sep-2015 23:55:20 UTC] PHP   2. mysqli_connect() /home/ubuntu/workspace/php_course_work/lab_2/report.php:21
+[14-Sep-2015 23:55:20 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/ubuntu/workspace/php_course_work/lab_2/report.php on line 30
+[14-Sep-2015 23:55:20 UTC] PHP Stack trace:
+[14-Sep-2015 23:55:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/php_course_work/lab_2/report.php:0
+[14-Sep-2015 23:55:20 UTC] PHP   2. mysqli_query() /home/ubuntu/workspace/php_course_work/lab_2/report.php:30
