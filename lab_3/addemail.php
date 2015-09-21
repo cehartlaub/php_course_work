@@ -5,7 +5,7 @@
     </head>
     
     <body>
-        <?php>
+        <?php
           $dbc = mysqli_connect('localhost', 'cehartlaub', '123456', 'elvis_store')
             or die ('Error connecting to mysql server');
             
@@ -22,7 +22,7 @@
          echo 'Customer added.';
          
          mysqli_close($dbc);
-        <?>
+        ?>
         
     </body>
 </html>
