@@ -33,13 +33,26 @@
               $msg = "Dear $first_name $last_name, \n $text";
               mail($to, $subject, $msg, 'From:' . $from);
               echo 'Email sent to: ' . $to . '<br />';
-          }
+          
           
           
           mysqli_close($dbc);
+          }
           
-           }
-       
+        }
+        if (empty($subject) && empty($text)) {
+          echo 'You forgot the email subject and body text.<br />';
+        }
+        if (empty($subject) && (!empty($text))) {
+          echo 'You forgot the email subject.<br />';
+        }
+        if (!empty($subject) && (empty($text))) {
+          echo 'You forgot the email body text.<br />';
+        }
+        if((!empty($subject)) && (!empty($text))) {
+          //Everything is fine send the email
+        }
+        
           ?>
     </body>
 </html>
