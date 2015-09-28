@@ -13,8 +13,8 @@
           $text = $_POST['elvismail'];
           
           
-       if(!empty($text)){
-           if(!empty($subject)){
+       if((!empty($text)) && (!empty($text))){
+           
                
        
           $dbc = mysqli_connect('localhost', 'cehartlaub', '123456', 'elvis_store')
@@ -39,7 +39,7 @@
           mysqli_close($dbc);
           
            }
-       }
+       
           ?>
     </body>
 </html>
