@@ -6,8 +6,7 @@
     
     <body>
         <?php
-          
-          
+         if (isset($_POST['submit'])) {
           $from = 'elmer@makemeelvis.com';
           $subject = $_POST['subject'];
           $text = $_POST['elvismail'];
@@ -54,6 +53,9 @@
         }
         if((!empty($subject)) && (!empty($text))) {
           //Everything is fine send the email
+        }
+        else {
+            $output_form = true;
         }
         if ($output_form) {
     ?>
