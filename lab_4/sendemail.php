@@ -59,11 +59,13 @@
         }
         if ($output_form) {
     ?>
-        <form method="post" action="sendemail.php">
+        <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>"></form>
             <label for="subject">Subject of email:</label><br />
-            <input id="subject" name="subject" type="text" size="30" /><br />
+            <input id="subject" name="subject" type="text" size="30" 
+              value="<?php echo $subject; ?>"/><br />
             <label for="elvismail">Body of email:</label><br />
-            <textarea id="elvismail" name="elvismail" rows="8" cols="40"></textarea><br />
+            <textarea id="elvismail" name="elvismail" rows="8" cols="40">
+              <?php echo $text; ?></textarea><br />
             <input type="submit" name="submit" value="Submit" />
         <?php
           }
