@@ -6,12 +6,19 @@
     
     <body>
         <?php
-          $dbc = mysqli_connect('localhost', 'cehartlaub', '123456', 'elvis_store')
-          or die('Error connecting to MySQL server');
+          
           
           $from = 'elmer@makemeelvis.com';
           $subject = $_POST['subject'];
           $text = $_POST['elvismail'];
+          
+          
+       if(!empty($text)){
+           if(!empty($subject)){
+               
+       
+          $dbc = mysqli_connect('localhost', 'cehartlaub', '123456', 'elvis_store')
+          or die('Error connecting to MySQL server');
           
           
           $query = "SELECT * FROM email_list";
@@ -30,6 +37,9 @@
           
           
           mysqli_close($dbc);
+          
+           }
+       }
           ?>
     </body>
 </html>
