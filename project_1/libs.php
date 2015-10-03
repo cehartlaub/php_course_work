@@ -100,7 +100,7 @@
          
                 mysqli_close($dbc);
                 
-                echo $libs;
+                echo '<br />' . $libs;
             }
            
             
