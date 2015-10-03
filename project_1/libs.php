@@ -16,7 +16,7 @@
                $adjective = $_POST['adjective'];
                $adverb = $_POST['adverb'];
                $output_form = false;
-               $libs = "They $verb away $adverb in a $adjective $noun.";
+               $libs = "They $verb away $adverb in $adjective $noun.";
             if ((empty($noun)) && (empty($verb)) && (empty($adjective)) && (empty($adverb))) {
                 echo 'You forgot to enter any of the forms';
                 $output_form = true;
