@@ -30,7 +30,7 @@
       $output_form = true;
     }
 
-    if ((!empty($subject)) && empty($text)) {
+    if ((!empty($subject)) && (empty($text))) {
       echo 'You forgot the email body text.<br />';
       $output_form = true;
     }
