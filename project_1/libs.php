@@ -16,15 +16,16 @@
                $adjective = $_POST['adjective'];
                $adverb = $_POST['adverb'];
                $output_form = false;
-            
+               $libs = "They $verb away $adverb in a $adjective $noun.";
             }
             else {
                 $output_form = true;
             }
             
             if ((!empty($noun)) && (!empty($verb)) && (!empty($adjective)) && (!empty($adverb))) {
-                echo 'The' . $adjective . $noun . $verb . $adverb . '<br />';
+                echo $libs;
             }
+            
             
             
              
