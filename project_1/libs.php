@@ -22,13 +22,15 @@
                 $output_form = true;
             }
             
-            
+            if ((!empty($noun)) && (!empty($verb)) && (!empty($adjective)) && (!empty($adverb))) {
+                echo 'The' . $adjective . $noun . $verb . $adverb . '<br />';
+            }
             
             
              
             if ($output_form) { 
         ?>
-              <form action: method"post">
+              <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
                  <label for="noun">Noun:</label>
                  <input type="text" id="noun" name="noun" /><br />
                  <label for="verb">Verb:</label>
