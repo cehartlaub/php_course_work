@@ -23,6 +23,19 @@
             }
             
             if ((!empty($noun)) && (!empty($verb)) && (!empty($adjective)) && (!empty($adverb))) {
+                $dbc = mysqli_connect('localhost', 'cehartlaub', '123456', 'project_1')
+                 or die ('Error connecting to mysql server');
+            
+          
+                $query = "INSERT INTO madlibs (Noun, Verb, Adjective, Adverb, Story)" . 
+                "VALUES ('$noun', '$verb', '$adjective', '$adverb', '$libs')";
+          
+                mysqli_query($dbc, $query)
+                 or die('Error querying database');
+           
+         
+                mysqli_close($dbc);
+                
                 echo $libs;
             }
             
