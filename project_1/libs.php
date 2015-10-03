@@ -17,10 +17,70 @@
                $adverb = $_POST['adverb'];
                $output_form = false;
                $libs = "They $verb away $adverb in a $adjective $noun.";
-            }
-            else {
+            if ((empty($noun)) && (empty($verb)) && (empty($adjective)) && (empty($adverb))) {
+                echo 'You forgot to enter any of the forms';
                 $output_form = true;
             }
+            if ((empty($noun)) && (!empty($verb)) && (!empty($adjective)) && (!empty($adverb))) {
+                echo 'You forgot to enter a noun';
+                $output_form = true;
+            }
+            if ((!empty($noun)) && (empty($verb)) && (!empty($adjective)) && (!empty($adverb))) {
+                echo 'You forgot to enter a verb';
+                $output_form = true;
+            }
+            if ((!empty($noun)) && (!empty($verb)) && (empty($adjective)) && (!empty($adverb))) {
+                echo 'You forgot to enter an adjective';
+                $output_form = true;
+            }
+            if ((!empty($noun)) && (!empty($verb)) && (!empty($adjective)) && (empty($adverb))) {
+                echo 'You forgot to enter an adverb';
+                $output_form = true;
+            }
+            if ((empty($noun)) && (empty($verb)) && (!empty($adjective)) && (!empty($adverb))) {
+                echo 'You forgot to enter a noun and verb';
+                $output_form = true;
+            }
+            if ((empty($noun)) && (!empty($verb)) && (empty($adjective)) && (!empty($adverb))) {
+                echo 'You forgot to enter a noun and adjective';
+                $output_form = true;
+            }
+            if ((empty($noun)) && (!empty($verb)) && (!empty($adjective)) && (empty($adverb))) {
+                echo 'You forgot to enter a noun and adverb';
+                $output_form = true;
+            }
+            if ((!empty($noun)) && (empty($verb)) && (empty($adjective)) && (!empty($adverb))) {
+                echo 'You forgot to enter a verb and adjective';
+                $output_form = true;
+            }
+            if ((!empty($noun)) && (empty($verb)) && (!empty($adjective)) && (empty($adverb))) {
+                echo 'You forgot to enter a verb and adverb';
+                $output_form = true;
+            }
+            if ((!empty($noun)) && (!empty($verb)) && (empty($adjective)) && (empty($adverb))) {
+                echo 'You forgot to enter a adjective and adverb';
+                $output_form = true;
+            }
+            if ((empty($noun)) && (empty($verb)) && (empty($adjective)) && (!empty($adverb))) {
+                echo 'You forgot to enter a noun, verb and adjective';
+                $output_form = true;
+            }
+            if ((empty($noun)) && (!empty($verb)) && (empty($adjective)) && (empty($adverb))) {
+                echo 'You forgot to enter a noun, adjective and adverb';
+                $output_form = true;
+            }
+            if ((empty($noun)) && (!empty($verb)) && (empty($adjective)) && (empty($adverb))) {
+                echo 'You forgot to enter a noun, adjective and adverb';
+                $output_form = true;
+            }
+            if ((empty(!$noun)) && (empty($verb)) && (empty($adjective)) && (empty($adverb))) {
+                echo 'You forgot to enter a verb, adjective and adverb';
+                $output_form = true;
+            }
+            }
+               else {
+                $output_form = true;
+               }
             
             
             
@@ -42,10 +102,7 @@
                 
                 echo $libs;
             }
-            else {
-                echo 'NOTICE: Please enter all fields';
-                $output_form = true;
-            }
+           
             
             
             
