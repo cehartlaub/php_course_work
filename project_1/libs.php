@@ -42,9 +42,8 @@
                 
                 echo $libs;
             }
-            
             else {
-                echo 'Enter all fields';
+                echo 'NOTICE: Please enter all fields';
                 $output_form = true;
             }
             
