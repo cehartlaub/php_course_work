@@ -10,18 +10,23 @@
         <p>Enter fields below and submit for a funny short story</p>
         
         <?php 
-            if(isset($_POST['submit'])){
+            if (isset($_POST['submit'])) {
                $noun = $_POST['noun'];
                $verb = $_POST['verb'];
                $adjective = $_POST['adjective'];
                $adverb = $_POST['adverb'];
                $output_form = false;
+            
+            }
+            else {
+                $output_form = true;
             }
             
             
             
+            
              
-            if($output_form){ 
+            if ($output_form) { 
         ?>
               <form action: method"post">
                  <label for="noun">Noun:</label>
