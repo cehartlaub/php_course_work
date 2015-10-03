@@ -22,6 +22,10 @@
                 $output_form = true;
             }
             
+            
+            
+            
+            
             if ((!empty($noun)) && (!empty($verb)) && (!empty($adjective)) && (!empty($adverb))) {
                 $dbc = mysqli_connect('localhost', 'cehartlaub', '123456', 'project_1')
                  or die ('Error connecting to mysql server');
@@ -39,6 +43,11 @@
                 echo $libs;
             }
             
+            else {
+                echo 'Enter all fields';
+                $output_form = true;
+            }
+            
             
             
              
@@ -46,13 +55,13 @@
         ?>
               <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
                  <label for="noun">Noun:</label>
-                 <input type="text" id="noun" name="noun" /><br />
+                 <input type="text" id="noun" name="noun" value="<?php echo $noun; ?>" /><br />
                  <label for="verb">Verb:</label>
-                 <input type="text" id="verb" name="verb" /><br />
+                 <input type="text" id="verb" name="verb" value="<?php echo $verb; ?>" /><br />
                  <label for="adjective">Adjective:</label>
-                 <input type="text" id="adjective" name="adjective" /><br />
+                 <input type="text" id="adjective" name="adjective" value="<?php echo $adjective; ?>" /><br />
                  <label for="adverb">Adverb:</label>
-                 <input type="text" id="adverb" name="adverb" /><br />
+                 <input type="text" id="adverb" name="adverb" value="<?php echo $adverb; ?>" /><br />
                  <input type="submit" value="submit" name="submit" />
               </form>
         <?php
