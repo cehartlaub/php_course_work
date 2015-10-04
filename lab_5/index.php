@@ -13,7 +13,7 @@
 
 <?php
   // Connect to the database 
-  $dbc = mysqli_connect('www.guitarwars.net', 'admin', 'rockit', 'gwdb');
+  $dbc = mysqli_connect('localhost', 'cehartlaub', '123456', 'gwdb');
 
   // Retrieve the score data from MySQL
   $query = "SELECT * FROM guitarwars";
