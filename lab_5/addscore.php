@@ -10,7 +10,9 @@
   <h2>Guitar Wars - Add Your High Score</h2>
 
 <?php
-  define('GW_UPLOADPATH', 'images/');
+
+  require_once __DIR__ . 'appwars.php';
+  require_once __DIR__ . 'connectwars.php';
   
   if (isset($_POST['submit'])) {
     // Grab the score data from the POST
@@ -20,10 +22,10 @@
     
 
   if (!empty($name) && !empty($score) && !empty($screenshot)) {
-    $target = GW_UPLOADPATH . time() . $screenshot;
+    $target = GW_UPLOADPATH . $screenshot;
     if (move_uploaded_file($_FILES['screenshot']['tmp_name'], $target)) {  
       // Connect to the database
-      $dbc = mysqli_connect('localhost', 'cehartlaub', '123456', 'gwdb');
+      $dbc = mysqli_connect('DB_HOST', 'DB_USER', 'DB_PASSWORD', 'DB_NAME');
 
       // Write the data to the database
       $query = "INSERT INTO guitarwars VALUES (0, NOW(), '$name', '$score', '$screenshot')";

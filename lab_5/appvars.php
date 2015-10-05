@@ -1,3 +1,5 @@
 <?php
-define('GW_UPLOADPATH', 'images/');
+  // Define application constants
+  define('GW_UPLOADPATH', 'images/');
+  
 ?>
