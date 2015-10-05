@@ -1,7 +1,7 @@
 <html>
     <head>
        <title>Madlibs</title>
-       <link rel="stylesheet" type="text/css" href="style.css" />
+       <link rel="stylesheet" type="text/css" href="styles.css" />
     </head>
     
     <body>
@@ -110,6 +110,8 @@
              
             if ($output_form) { 
         ?>
+        
+            <div>      
               <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
                  <label for="noun">Noun:</label>
                  <input type="text" id="noun" name="noun" value="<?php echo $noun; ?>" /><br />
@@ -119,8 +121,9 @@
                  <input type="text" id="adjective" name="adjective" value="<?php echo $adjective; ?>" /><br />
                  <label for="adverb">Adverb:</label>
                  <input type="text" id="adverb" name="adverb" value="<?php echo $adverb; ?>" /><br />
-                 <input type="submit" value="submit" name="submit" />
+                 <div id="submitBtn"><input type="submit" value="submit" name="submit" /></div>
               </form>
+            </div> 
         <?php
             }
         ?>
