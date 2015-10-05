@@ -12,7 +12,9 @@
   <hr />
 
 <?php
-  define('GW_UPLOADPATH', 'images/');
+
+  require_once('appvars.php');
+  
   // Connect to the database 
   $dbc = mysqli_connect('localhost', 'cehartlaub', '123456', 'gwdb');
   // Retrieve the score data from MySQL
