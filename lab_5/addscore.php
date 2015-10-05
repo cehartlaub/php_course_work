@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Guitar Wars - Add Your High Score</title>
-  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="stylish.css" />
 </head>
 <body>
   <h2>Guitar Wars - Add Your High Score</h2>

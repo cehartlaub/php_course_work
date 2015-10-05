@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Guitar Wars - High Scores</title>
-  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="styleish.css" />
 </head>
 <body>
   <h2>Guitar Wars - High Scores</h2>
@@ -26,6 +26,10 @@
   
   while ($row = mysqli_fetch_array($data)) { 
     // Display the score data
+    if($i==0){
+      echo '<tr><td colspan="2" class="topscoreheader">Top Score: ' .
+        $row['score'] . '</td></tr>';
+    }
     echo '<tr><td class="scoreinfo">';
     echo '<span class="score">' . $row['score'] . '</span><br />';
     echo '<strong>Name:</strong> ' . $row['name'] . '<br />';
@@ -36,6 +40,7 @@
       else {
         echo '<td><img src="' . GW_UPLOADPATH . "unverified.gif" . '" alt="unverified score" /></td></tr>';
       }
+      $itt;
   }
   
   echo '</table>';
