@@ -1,0 +1,12 @@
+#submitBtn {
+  margin-left:90px;
+}
+label{
+    display: inline-block;
+    clear: left;
+    width: 70px;
+    text-align: right;
+}
+input {
+  display: inline-block;
+}
