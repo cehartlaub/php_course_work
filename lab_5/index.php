@@ -14,9 +14,10 @@
 <?php
 
   require_once('appvars.php');
+  require_once('connectvars.php');
   
   // Connect to the database 
-  $dbc = mysqli_connect('localhost', 'cehartlaub', '123456', 'gwdb');
+  $dbc = mysqli_connect('DB_HOST', 'DB_USER', 'DB_PASSWORD', 'DB_NAME');
   // Retrieve the score data from MySQL
   $query = "SELECT * FROM guitarwars";
   $data = mysqli_query($dbc, $query);
