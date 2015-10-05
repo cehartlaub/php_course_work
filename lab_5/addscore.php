@@ -17,9 +17,10 @@
     $name = $_POST['name'];
     $score = $_POST['score'];
     $screenshot = $_FILES['screenshot']['name'];
+    
 
   if (!empty($name) && !empty($score) && !empty($screenshot)) {
-    $target = GW_UPLOADPATH . $screenshot;
+    $target = GW_UPLOADPATH . time() . $screenshot;
     if (move_uploaded_file($_FILES['screenshot']['tmp_name'], $target)) {  
       // Connect to the database
       $dbc = mysqli_connect('localhost', 'cehartlaub', '123456', 'gwdb');
