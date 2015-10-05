@@ -110,17 +110,32 @@
              
             if ($output_form) { 
         ?>
+            <table>
+                <tbody>
+                    
               <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-                 <label for="noun">Noun:</label>
-                 <input type="text" id="noun" name="noun" value="<?php echo $noun; ?>" /><br />
-                 <label for="verb">Verb:</label>
-                 <input type="text" id="verb" name="verb" value="<?php echo $verb; ?>" /><br />
-                 <label for="adjective">Adjective:</label>
-                 <input type="text" id="adjective" name="adjective" value="<?php echo $adjective; ?>" /><br />
-                 <label for="adverb">Adverb:</label>
-                 <input type="text" id="adverb" name="adverb" value="<?php echo $adverb; ?>" /><br />
-                 <input type="submit" value="submit" name="submit" />
+                 <tr>
+                 <td><label for="noun">Noun:</label></td>
+                 <td><input type="text" id="noun" name="noun" value="<?php echo $noun; ?>" /><br /></td>
+                 </tr>
+                 <tr>
+                 <td><label for="verb">Verb:</label></td>
+                 <td><input type="text" id="verb" name="verb" value="<?php echo $verb; ?>" /><br /></td>
+                 </tr>
+                 <tr>
+                 <td><label for="adjective">Adjective:</label></td>
+                 <td><input type="text" id="adjective" name="adjective" value="<?php echo $adjective; ?>" /><br /></td>
+                 </tr>
+                 <tr>
+                 <td><label for="adverb">Adverb:</label></td>
+                 <td><input type="text" id="adverb" name="adverb" value="<?php echo $adverb; ?>" /><br /></td>
+                 </tr>
+                 <tr>
+                 <td id="submitBtn" colspan="2"><input type="submit" value="submit" name="submit" /></td>
+                 </tr>
               </form>
+              </tbody>
+            </table>
         <?php
             }
         ?>
