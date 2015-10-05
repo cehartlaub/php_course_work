@@ -20,7 +20,7 @@
     $score = $_POST['score'];
     $screenshot = $_FILES['screenshot']['name'];
     
-
+  
   if (!empty($name) && !empty($score) && !empty($screenshot)) {
     $target = GW_UPLOADPATH . $screenshot;
     if (move_uploaded_file($_FILES['screenshot']['tmp_name'], $target)) {  

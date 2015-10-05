@@ -23,10 +23,10 @@
   // Loop through the array of score data, formatting it as HTML 
   echo '<table>';
   
-  
+  $i = 0;
   while ($row = mysqli_fetch_array($data)) { 
     // Display the score data
-    if($i==0){
+    if ($i == 0) {
       echo '<tr><td colspan="2" class="topscoreheader">Top Score: ' .
         $row['score'] . '</td></tr>';
     }
@@ -40,7 +40,7 @@
       else {
         echo '<td><img src="' . GW_UPLOADPATH . "unverified.gif" . '" alt="unverified score" /></td></tr>';
       }
-      $itt;
+      $i++;
   }
   
   echo '</table>';
