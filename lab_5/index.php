@@ -12,13 +12,15 @@
   <hr />
 
 <?php
-
-  define('GW_UPLOADPATH', 'images/');
+  
+  require_once('connectvars.php');
+  require_once('appvars.php');
+  
  
   // Connect to the database 
-  $dbc = mysqli_connect('localhost', 'cehartlaub', '123456', 'gwdb');
+  $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
   // Retrieve the score data from MySQL
-  $query = "SELECT * FROM guitarwars";
+  $query = "SELECT * FROM guitarwars ORDER BY score desc, date asc;";
   $data = mysqli_query($dbc, $query);
   // Loop through the array of score data, formatting it as HTML 
   echo '<table>';

@@ -11,7 +11,8 @@
 
 <?php
 
-  
+  require_once('connectvars.php');
+  require_once('appvars.php');
   define ('GW_UPLOADPATH', 'images/');
   define ('GW_MAXFILESIZE', 32768);
   
@@ -30,7 +31,7 @@
           $target = GW_UPLOADPATH . $screenshot; 
           if (move_uploaded_file($_FILES['screenshot']['tmp_name'], $target)) {  
             // Connect to the database
-            $dbc = mysqli_connect('localhost', 'cehartlaub', '123456', 'gwdb'); 
+            $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME); 
 
             // Write the data to the database
             $query = "INSERT INTO guitarwars VALUES (0, NOW(), '$name', '$score', '$screenshot')";
