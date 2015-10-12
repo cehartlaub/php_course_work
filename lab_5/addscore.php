@@ -21,7 +21,8 @@
     $name = $_POST['name'];
     $score = $_POST['score'];
     $screenshot = $_FILES['screenshot']['name'];
-    
+    $screenshot_type = $_FILES['screenshot']['type'];
+    $screenshot_size = $_FILES['screenshot']['size']; 
   
     if (!empty($name) && !empty($score) && !empty($screenshot)) {
       if (($screenshot_type == 'image/gif') || ($screenshot_type == 'image/jpeg') ||
